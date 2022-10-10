@@ -6,8 +6,8 @@ pipeline {
                 label 'slave'
             }
             steps {
-                ls
                 echo 'pull code successfully'
+                echo '$Subject'
             }
         }
         stage('build') {
