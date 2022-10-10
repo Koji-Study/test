@@ -15,7 +15,6 @@ pipeline {
                 label 'master'
             }
             steps {
-                ls
                 echo 'build successfully'
             }
         }
@@ -24,7 +23,6 @@ pipeline {
                 label 'slave'
             }
             steps {
-                ls
                 echo 'deploy successfully'
             }
         }
