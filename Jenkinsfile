@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('pull code') {
             agent {
-                label 'slave'
+                label 'master'
             }
             steps {
                 echo 'pull code successfully'
@@ -20,7 +20,7 @@ pipeline {
         }
         stage('deploy') {
             agent {
-                label 'slave'
+                label 'master'
             }
             steps {
                 echo 'deploy successfully'
